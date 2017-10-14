@@ -8,7 +8,6 @@ import { DiscoveryPage } from '../pages/discovery/discovery';
 import { PromotionPage } from '../pages/promotion/promotion';
 import { ProfilePage } from '../pages/profile/profile';
 import { RedemptionPage } from '../pages/redemption/redemption';
-import { RedemptionDetailPage } from '../pages/redemption-detail/redemption-detail';
 
 @Component({
   templateUrl: 'app.html'
@@ -25,11 +24,11 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'My Profile', component: ProfilePage },
       { title: 'Navigation', component: HomePage },
       { title: 'Discovery', component: DiscoveryPage },
       { title: 'All Promotions', component: PromotionPage },
-      { title: 'Redemptions', component: RedemptionPage }
+      { title: 'Redemptions', component: RedemptionPage },
+      { title: 'My Profile', component: ProfilePage }
     ];
 
   }
