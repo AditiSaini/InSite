@@ -1,0 +1,143 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>User Profile</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="container">
+    <div class="customer-info">
+      <div class="customer-pic"></div>
+      <div class="customer-details">
+        <p class="name">Joshen Lim</p>
+        <div class="more-details">
+          <p>Total Points Accumulated:</p>
+          <p><span>80</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <p>Current Member Tier: GOLD</p>
+      <p>Total Redemptions Claimed: 5</p>
+      <p>Total Discovery Routes Submitted: 1</p>
+      <p>Total Badges Earned: 3 / 10</p>
+    </div>
+    <div class="card">
+      <p>Badges Earned</p>
+      <div class="badges">
+        <div class="badge">
+          <img src="../assets/images/icon1.png" />
+          <p>Super Saver</p>
+        </div>
+        <div class="badge">
+          <img src="../assets/images/icon2.png" />
+          <p>Loyal User</p>
+        </div>
+        <div class="badge">
+          <img src="../assets/images/icon3.png" />
+          <p>Top Curator</p>
+        </div>
+      </div>
+    </div>
+    <div class="button">Unlink from Facebook</div>
+  </div>
+</ion-content>
+
+
+<style>
+.container {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container > .customer-info {
+  width: 85%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.container > .customer-info > .customer-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 10px;
+}
+.container > .customer-info > .customer-details > .more-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container > .customer-info > .customer-details > .more-details > p {
+  width: 80px;
+  font-size: 0.8em;
+  font-weight: 300;
+  opacity: 0.5;
+}
+.container > .customer-info > .customer-details > .more-details > p > span {
+  font-size: 3em;
+}
+.container > .customer-info > .customer-details > .name {
+  font-size: 1.6em;
+  font-weight: 300;
+  margin-bottom: -10px;
+}
+.container > .customer-info > .customer-pic {
+  width: 90px;
+  height: 90px;
+  margin-right: 10px;
+  margin-top: 10px;
+  border-radius: 100%;
+  background-image: url('https://i.pinimg.com/736x/c7/bf/a3/c7bfa3df5ca2405c1235c44603511c59--cute-pug-puppies-cute-pugs.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.container > .card {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  border-radius: 8px;
+  font-size: 1.2em;
+  font-weight: 300;
+  opacity: 0.7;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+}
+.container > .card > p {
+  margin: 10px 0px;
+}
+.container > .card > .badges {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.container > .card > .badges >.badge {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+.container > .card > .badges > .badge > p {
+  margin: 0;
+  margin-top: 5px;
+  font-size: 0.8em;
+}
+.container > .button {
+  width: 80%;
+  padding: 10px 0px;
+  color: #FFF;
+  font-weight: 400;
+  background-color: #3E5A94;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 5%;
+  left: 0;
+  right: 0;
+  font-size: 1.3em;
+}
+</style>
