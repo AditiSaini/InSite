@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Available Promotions</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="container">
+    <p class="header">Head down to these stores right now to enjoy these attractice offers!</p>
+    <div class="card">
+      <div class="promo-back" style="background-image: url('http://sg.heregotsale.com/sites/default/files/uniqlo_20160528b.jpg')"></div>
+      <p class="name">UNIQLO ( #03-518 )</p>
+      <p class="desc">Relaxed shorts and Linen Shirt on seasonal discount till Friday, 03 October. Grab them while you can!</p>
+    </div>
+    <div class="card">
+      <div class="promo-back" style="background-image: url('https://i.pinimg.com/originals/b0/9e/30/b09e3001686bd083d5fd7f728f3e0b37.jpg')"></div>
+      <p class="name">H&M ( #02-470 )</p>
+      <p class="desc">Summer Collection is now ready with a 20% off your entire receipt if you purchase on our online store</p>
+    </div>
+    <div class="card">
+      <div class="promo-back" style="background-image: url('http://3.bp.blogspot.com/-ZWeeSSriXrI/Uth_3xt9BOI/AAAAAAAAEPw/Zwf5BU2bSys/s1600/jcrew.jpg'); background-position: 10% 30%;"></div>
+      <p class="name">ZARA ( #01-023 )</p>
+      <p class="desc">Enjoy extra 40% off with Final Sales Items on our online store, hurry!</p>
+    </div>
+  </div>
+</ion-content>
+
+
+<style>
+.container {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container > .header {
+  font-weight: 300;
+  opacity: 0.5;
+  font-size: 1.3em;
+}
+.container > .card {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  border-radius: 8px;
+  font-size: 1.2em;
+  font-weight: 300;
+  opacity: 0.7;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+}
+.container > .card > .promo-back{
+  height: 180px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom: 1px rgba(0,0,0,0.3)
+}
+
+</style>
