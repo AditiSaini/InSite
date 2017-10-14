@@ -1,0 +1,64 @@
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+        <div class="customer">
+          <div class="customer-picture"></div>
+          <div class="customer-information">
+            <p class="name">Joshen Lim</p>
+            <p class="points">80 points</p>
+          </div>
+        </div>
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list>
+      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        {{p.title}}
+      </button>
+      <img src="../assets/images/logo.jpg" class="fix" />
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
+
+<style>
+  .fix{
+    position:fixed;
+    width:80px;
+    bottom:5px;
+    left:10px;
+  }
+
+  .customer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+  }
+  .name {
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-top: 15px;
+  }
+  .points {
+    font-size: 0.6em;
+    opacity: 0.5;
+    margin-top: 5px;
+  }
+  .customer-picture {
+    width: 55px;
+    height: 55px;
+    margin-right: 10px;
+    margin-top: 10px;
+    border-radius: 100%;
+    background-image: url('https://i.pinimg.com/736x/c7/bf/a3/c7bfa3df5ca2405c1235c44603511c59--cute-pug-puppies-cute-pugs.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+</style>

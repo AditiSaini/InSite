@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Discovery</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h4 class="title">Let's choose a category!</h4>
+  <ion-item>
+    <ion-label>Category</ion-label>
+      <ion-select [(ngModel)]="category">
+        <ion-option value="clothing">Clothing</ion-option>
+        <ion-option value="electronics">Eletronics</ion-option>
+        <ion-option value="fooddrinks">Food and Drinks</ion-option>
+        <ion-option value="shoesacc">Shoes and Accessories</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-card (click)="directToDetails()">
+    <ion-card-header>
+      GSS Trail
+    </ion-card-header>
+    <ion-card-content>
+      Never run out of clothes anymore with these great deals
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card (click)="directToDetails()">
+    <ion-card-header>
+      Winter Wonderland
+    </ion-card-header>
+    <ion-card-content>
+      Jackets, Hats, Socks, Gloves, everything you need for a vacation in December
+    </ion-card-content>
+  </ion-card>
+
+  
+
+  <button ion-button (click)="directToRoute()">+</button>
+</ion-content>

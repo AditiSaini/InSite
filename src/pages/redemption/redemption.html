@@ -1,0 +1,84 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Redemption</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <h4> You currently have: 80 points </h4>
+    <div class="redemption-options">
+      <div (click)="directToDetails()" class="redemption-option">
+        <img width="110px" src="https://logorealm.com/wp-content/uploads/2017/02/nike-logo-1.jpeg" />
+        <div class="redemption-option-info">
+          <p class="desc">15% Off Tops</p>
+          <p><span>5</span><br>points</p>
+        </div>
+      </div>
+      <div class="redemption-option">
+        <img width="120px" src="https://coldstorage.com.sg/frontend/app/images/cs-logo-header-hires.png" />
+        <div class="redemption-option-info">
+          <p class="desc">10% Off All</p>
+          <p><span>10</span><br>points</p>
+        </div>
+      </div>
+      <div class="redemption-option">
+        <img width="110px" src="http://www.toothpick.com.au/images/boost%20logo.png" />
+        <div class="redemption-option-info">
+          <p class="desc">One Free Drink</p>
+          <p><span>20</span><br>points</p>
+        </div>
+      </div>
+      <div class="redemption-option">
+        <img width="50px" src="https://seeklogo.com/images/A/apple-logo-52C416BDDD-seeklogo.com.png" />
+        <div class="redemption-option-info">
+          <p class="desc">Free Macbook</p>
+          <p><span>80</span><br>points</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>
+
+<style>
+.container {
+  padding: 20px;
+}
+.redemption-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.redemption-option {
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 185px;
+  height: 200px;
+  padding: 10px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+}
+.redemption-option-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.redemption-option-info > .desc {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  font-size: 1.3em;
+}
+.redemption-option-info > p > span {
+  font-size: 2.6em;
+}
+</style>
