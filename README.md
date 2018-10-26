@@ -1,4 +1,5 @@
 INSIDE? IN SITE? INSIGHT!
+![Image description](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/000/548/315/datas/gallery.jpg) 
 
 Navigating around NTU was something we found hard to grapple with especially because the school is enormous. We thought to ourselves, how great would it be if we had an internal GPS system to tell us where we are and what is the best way to our destination. Ranting about this helped us realise that if we were to build a solution to solve our first-world problem, the benefits to customers, retailers, shopping mall operators, event managers and the everyday person are potentially far-reaching and constructive. That was how we got started, and the rest is history.
 
